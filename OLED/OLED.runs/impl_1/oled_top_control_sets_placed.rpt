@@ -1,0 +1,92 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu Jan 24 13:21:00 2019
+| Host         : princeling-HP-Compaq-Pro-6380-MT running 64-bit Ubuntu 16.04.5 LTS
+| Command      : report_control_sets -verbose -file oled_top_control_sets_placed.rpt
+| Design       : oled_top
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |    64 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            8 |
+|      6 |            2 |
+|      8 |            4 |
+|     14 |            3 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            5 |
+| No           | No                    | Yes                    |               6 |            2 |
+| No           | Yes                   | No                     |             162 |           23 |
+| Yes          | No                    | No                     |              24 |            5 |
+| Yes          | No                    | Yes                    |             162 |           34 |
+| Yes          | Yes                   | No                     |              18 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------+----------------------------------------------+--------------------------------+------------------+----------------+
+|               Clock Signal               |                 Enable Signal                |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++------------------------------------------+----------------------------------------------+--------------------------------+------------------+----------------+
+|  sck_reg_OBUF_BUFG                       |                                              |                                |                1 |              2 |
+|  oled_clear/spi_send_reg_i_2__0_n_0      |                                              | oled_write_data/AR[0]          |                1 |              2 |
+|  write_start_reg_i_2_n_0                 |                                              |                                |                1 |              2 |
+|  clk_IBUF_BUFG                           | reset_oled_i_2_n_0                           | reset_oled_i_1_n_0             |                1 |              2 |
+|  oled_write_data/spi_send_reg_i_2_n_0    |                                              | oled_write_data/AR[0]          |                1 |              2 |
+|  spi_send_reg_i_2__1_n_0                 |                                              | oled_write_data/AR[0]          |                1 |              2 |
+| ~sck_reg_OBUF_BUFG                       | spi_master/count                             |                                |                1 |              2 |
+| ~sck_reg_OBUF_BUFG                       |                                              |                                |                1 |              2 |
+|  sck_reg_OBUF_BUFG                       |                                              | oled_write_data/AR[0]          |                2 |              6 |
+|  clk_IBUF_BUFG                           |                                              |                                |                2 |              6 |
+|  sck_reg_OBUF_BUFG                       | spi_master/count                             | spi_master/count[3]_i_1__0_n_0 |                1 |              8 |
+|  sck_reg_OBUF_BUFG                       | spi_master/FSM_onehot_cur_st[3]_i_1_n_0      |                                |                1 |              8 |
+|  sck_reg_OBUF_BUFG                       | oled_write_data/y_tmp_0                      | oled_write_data/AR[0]          |                3 |              8 |
+|  sck_reg_OBUF_BUFG                       | oled_clear/E[0]                              | oled_write_data/AR[0]          |                1 |              8 |
+| ~sck_reg_OBUF_BUFG                       | spi_master/reg_data[7]_i_1_n_0               |                                |                3 |             14 |
+|  sck_reg_OBUF_BUFG                       | oled_write_data/FSM_onehot_cur_st[6]_i_1_n_0 | oled_write_data/AR[0]          |                2 |             14 |
+|  oled_clear/spi_data_reg[7]_i_2_n_0      |                                              | oled_write_data/AR[0]          |                2 |             14 |
+|  sck_reg_OBUF_BUFG                       | oled_clear/x_tmp                             | oled_write_data/AR[0]          |                4 |             16 |
+|  sck_reg_OBUF_BUFG                       | oled_clear/y_tmp                             | oled_write_data/AR[0]          |                3 |             16 |
+|  oled_write_data/spi_data_reg[7]_i_1_n_0 |                                              | oled_write_data/AR[0]          |                2 |             16 |
+|  sck_reg_OBUF_BUFG                       | spi_master/out[0]                            | oled_write_data/AR[0]          |                5 |             24 |
+|  clk_IBUF_BUFG                           |                                              | spi_master/sck_reg             |                8 |             62 |
+|  clk_IBUF_BUFG                           |                                              | clear                          |                8 |             64 |
+|  sck_reg_OBUF_BUFG                       | oled_write_data/count[3]_i_1_n_0             | oled_write_data/AR[0]          |               17 |             84 |
++------------------------------------------+----------------------------------------------+--------------------------------+------------------+----------------+
+
+
