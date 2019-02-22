@@ -76,6 +76,10 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/vga_test.v">
         <FileInfo>
+<<<<<<< HEAD
+=======
+          <Attr Name="AutoDisabled" Val="1"/>
+>>>>>>> master
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
