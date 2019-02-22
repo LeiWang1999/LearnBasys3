@@ -19,17 +19,20 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+// 解决：电子初始的位置应该在显示区的左上角，而不是在屏幕的左上角
+// 解决：在左边界区和右边界区，应该无效的是video信号，而不是同步信号 同步信号在折回区无效
+// 所以显示的顺序应该是 HD HB HR HF VD DB VR VF
 module vga_sync #(
     parameter   HD = 640,   //水平显示区域 
-                HF = 48,    //水平扫描左边界
                 HB = 16,    //水平扫描右边界
-                HR = 96,    //水平折回区
+                HR = 96,    //水平折回区 
+                HF = 48,    //水平扫描左边界
 //-----------------------------分割水平与扫描----------------
                 VD = 480,   //垂直显示区域
-                VF = 10,    //垂直扫描顶部边界
                 VB = 33,    //垂直扫描底部边界
-                VR = 2      //垂直折回区
+                VR = 2,      //垂直折回区                
+                VF = 10   //垂直扫描顶部边界
+
 )(
         input wire clk,rst_n,
         output wire hsync,vsync,video_on,p_tick,
@@ -111,8 +114,8 @@ module vga_sync #(
     end
 
     //-------------------- output ---------------------------------------------
-    assign hsync_r_next = ((pixel_x_count>=(HD+HB))&&(pixel_x_count <= (HD+HB+HR-1)));
-    assign vsync_r_next = ((pixel_y_count>=(VD+VB))&&(pixel_y_count <= (VD+VB+VR-1)));
+    assign hsync_r_next = (pixel_x_count>=(HD+HB))&&(pixel_x_count <= (HD+HB+HR-1));
+    assign vsync_r_next = (pixel_y_count>=(VD+VB))&&(pixel_y_count <= (VD+VB+VR-1));
 
 
     //--------------------- port connection -----------------------------------
