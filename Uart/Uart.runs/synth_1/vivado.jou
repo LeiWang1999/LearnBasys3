@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 24 17:28:03 2019
+# Process ID: 6251
+# Current directory: /home/princeling/Documents/ElectronicDesign/Fpga-verilog/LearnBasys3/Uart/Uart.runs/synth_1
+# Command line: vivado -log uart_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_top.tcl
+# Log file: /home/princeling/Documents/ElectronicDesign/Fpga-verilog/LearnBasys3/Uart/Uart.runs/synth_1/uart_top.vds
+# Journal file: /home/princeling/Documents/ElectronicDesign/Fpga-verilog/LearnBasys3/Uart/Uart.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source uart_top.tcl -notrace

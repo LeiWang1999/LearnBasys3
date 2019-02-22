@@ -1,0 +1,78 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu Jan 24 17:29:46 2019
+| Host         : princeling-HP-Compaq-Pro-6380-MT running 64-bit Ubuntu 16.04.5 LTS
+| Command      : report_control_sets -verbose -file uart_top_control_sets_placed.rpt
+| Design       : uart_top
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    26 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      8 |            1 |
+|     10 |            1 |
+|     12 |            1 |
+|     14 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              28 |            4 |
+| Yes          | No                    | No                     |              40 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              14 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+----------------------------------------------+----------------------------------------------+------------------+----------------+
+|    Clock Signal    |                 Enable Signal                |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++--------------------+----------------------------------------------+----------------------------------------------+------------------+----------------+
+|  test_OBUF_BUFG[0] | uart_tx/FSM_onehot_current_state_reg_n_0_[1] |                                              |                1 |              2 |
+|  test_OBUF_BUFG[0] | uart_tx/txd_i_1_n_0                          | uart_tx/FSM_onehot_current_state_reg_n_0_[1] |                1 |              4 |
+|  test_OBUF_BUFG[0] | uart_tx/FSM_onehot_current_state[3]_i_1_n_0  |                                              |                1 |              8 |
+|  test_OBUF_BUFG[0] | uart_tx/count                                | uart_tx/count[4]_i_1_n_0                     |                1 |             10 |
+|  test_OBUF_BUFG[0] |                                              |                                              |                2 |             12 |
+|  test_OBUF_BUFG[0] | uart_tx/data_o_tmp[0]                        |                                              |                2 |             14 |
+|  test_OBUF_BUFG[0] | uart_rx/FSM_onehot_current_state_reg_n_0_[1] |                                              |                3 |             16 |
+|  clk_IBUF_BUFG     |                                              | counter_mod_9600/regN[0]_i_1_n_0             |                4 |             28 |
++--------------------+----------------------------------------------+----------------------------------------------+------------------+----------------+
+
+
