@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Fri Feb 22 14:33:19 2019
+| Date         : Fri Feb 22 15:42:56 2019
 | Host         : princeling-HP-Compaq-Pro-6380-MT running 64-bit Ubuntu 16.04.5 LTS
 | Command      : report_methodology -file vga_test_methodology_drc_routed.rpt -pb vga_test_methodology_drc_routed.pb -rpx vga_test_methodology_drc_routed.rpx
 | Design       : vga_test
@@ -23,12 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 36
+             Violations found: 29
 +-----------+----------+-----------------------------+------------+
 | Rule      | Severity | Description                 | Violations |
 +-----------+----------+-----------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell | 26         |
-| TIMING-20 | Warning  | Non-clocked latch           | 10         |
+| TIMING-17 | Warning  | Non-clocked sequential cell | 29         |
 +-----------+----------+-----------------------------+------------+
 
 2. REPORT DETAILS
@@ -65,152 +64,117 @@ Related violations: <none>
 
 TIMING-17#7 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_x_count_reg[0]/C is not reached by a timing clock
+The clock pin vga_sync_u1/hsync_r_reg_lopt_replica/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#8 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_x_count_reg[1]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_x_count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#9 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_x_count_reg[2]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_x_count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#10 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_x_count_reg[3]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_x_count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#11 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_x_count_reg[4]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_x_count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#12 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_x_count_reg[5]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_x_count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#13 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_x_count_reg[6]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_x_count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#14 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_x_count_reg[7]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_x_count_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#15 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_x_count_reg[8]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_x_count_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_x_count_reg[9]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_x_count_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_y_count_reg[0]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_x_count_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#18 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_y_count_reg[1]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_y_count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_y_count_reg[2]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_y_count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_y_count_reg[3]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_y_count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_y_count_reg[4]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_y_count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_y_count_reg[5]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_y_count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_y_count_reg[6]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_y_count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_y_count_reg[7]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_y_count_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Warning
 Non-clocked sequential cell  
-The clock pin vga_sync_u1/pixel_y_count_reg[8]/C is not reached by a timing clock
+The clock pin vga_sync_u1/pixel_y_count_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Warning
 Non-clocked sequential cell  
+The clock pin vga_sync_u1/pixel_y_count_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Warning
+Non-clocked sequential cell  
 The clock pin vga_sync_u1/pixel_y_count_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#1 Warning
-Non-clocked latch  
-The latch vga_sync_u1/pixel_y_count_next_reg[0] cannot be properly analyzed as its control pin vga_sync_u1/pixel_y_count_next_reg[0]/G is not reached by a timing clock
+TIMING-17#28 Warning
+Non-clocked sequential cell  
+The clock pin vga_sync_u1/vsync_r_reg/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#2 Warning
-Non-clocked latch  
-The latch vga_sync_u1/pixel_y_count_next_reg[1] cannot be properly analyzed as its control pin vga_sync_u1/pixel_y_count_next_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#3 Warning
-Non-clocked latch  
-The latch vga_sync_u1/pixel_y_count_next_reg[2] cannot be properly analyzed as its control pin vga_sync_u1/pixel_y_count_next_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#4 Warning
-Non-clocked latch  
-The latch vga_sync_u1/pixel_y_count_next_reg[3] cannot be properly analyzed as its control pin vga_sync_u1/pixel_y_count_next_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#5 Warning
-Non-clocked latch  
-The latch vga_sync_u1/pixel_y_count_next_reg[4] cannot be properly analyzed as its control pin vga_sync_u1/pixel_y_count_next_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#6 Warning
-Non-clocked latch  
-The latch vga_sync_u1/pixel_y_count_next_reg[5] cannot be properly analyzed as its control pin vga_sync_u1/pixel_y_count_next_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#7 Warning
-Non-clocked latch  
-The latch vga_sync_u1/pixel_y_count_next_reg[6] cannot be properly analyzed as its control pin vga_sync_u1/pixel_y_count_next_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#8 Warning
-Non-clocked latch  
-The latch vga_sync_u1/pixel_y_count_next_reg[7] cannot be properly analyzed as its control pin vga_sync_u1/pixel_y_count_next_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#9 Warning
-Non-clocked latch  
-The latch vga_sync_u1/pixel_y_count_next_reg[8] cannot be properly analyzed as its control pin vga_sync_u1/pixel_y_count_next_reg[8]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#10 Warning
-Non-clocked latch  
-The latch vga_sync_u1/pixel_y_count_next_reg[9] cannot be properly analyzed as its control pin vga_sync_u1/pixel_y_count_next_reg[9]/G is not reached by a timing clock
+TIMING-17#29 Warning
+Non-clocked sequential cell  
+The clock pin vga_sync_u1/vsync_r_reg_lopt_replica/C is not reached by a timing clock
 Related violations: <none>
 
 

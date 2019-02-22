@@ -107,16 +107,16 @@ module vga_sync #(
           end
           else pixel_y_count_next = pixel_y_count + 1;
         end
-        else pixel_y_count = pixel_y_count;
+        else pixel_y_count_next = pixel_y_count;
     end
 
     //-------------------- output ---------------------------------------------
     assign hsync_r_next = ((pixel_x_count>=(HD+HB))&&(pixel_x_count <= (HD+HB+HR-1)));
-    assign vsync_r_next = ((pixel_y_count>=(VD+VB))&&(pixel_y_count <= (VF+VB+VR-1)));
+    assign vsync_r_next = ((pixel_y_count>=(VD+VB))&&(pixel_y_count <= (VD+VB+VR-1)));
 
 
     //--------------------- port connection -----------------------------------
-    assign video_on = ((pixel_x_count<HD)&&(pixel_y_count<=VD));
+    assign video_on = ((pixel_x_count<HD)&&(pixel_y_count<VD));
     assign hsync = hsync_r;
     assign vsync = vsync_r;
     assign pixel_x = pixel_x_count;

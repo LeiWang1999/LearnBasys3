@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date             : Fri Feb 22 14:33:19 2019
+| Date             : Fri Feb 22 15:42:56 2019
 | Host             : princeling-HP-Compaq-Pro-6380-MT running 64-bit Ubuntu 16.04.5 LTS
 | Command          : report_power -file vga_test_power_routed.rpt -pb vga_test_power_summary_routed.pb -rpx vga_test_power_routed.rpx
 | Design           : vga_test
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.088        |
+| Total On-Chip Power (W)  | 1.028        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.011        |
-| Device Static (W)        | 0.077        |
+| Dynamic (W)              | 0.954        |
+| Device Static (W)        | 0.074        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 74.6         |
-| Junction Temperature (C) | 35.4         |
+| Max Ambient (C)          | 79.9         |
+| Junction Temperature (C) | 30.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,15 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.212 |       88 |       --- |             --- |
-|   LUT as Logic |     0.194 |       33 |     20800 |            0.16 |
-|   Register     |     0.012 |       36 |     41600 |            0.09 |
+| Slice Logic    |     0.078 |       71 |       --- |             --- |
+|   LUT as Logic |     0.067 |       27 |     20800 |            0.13 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |        7 |       --- |             --- |
-| Signals        |     0.244 |       71 |       --- |             --- |
-| I/O            |     1.555 |       10 |       106 |            9.43 |
-| Static Power   |     0.077 |          |           |                 |
-| Total          |     2.088 |          |           |                 |
+|   Register     |     0.005 |       29 |     41600 |            0.07 |
+|   Others       |     0.000 |        5 |       --- |             --- |
+| Signals        |     0.073 |       49 |       --- |             --- |
+| I/O            |     0.803 |       13 |       106 |           12.26 |
+| Static Power   |     0.074 |          |           |                 |
+| Total          |     1.028 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,9 +70,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.486 |       0.472 |      0.014 |
-| Vccaux    |       1.800 |     0.069 |       0.056 |      0.013 |
-| Vcco33    |       3.300 |     0.437 |       0.436 |      0.001 |
+| Vccint    |       1.000 |     0.179 |       0.167 |      0.011 |
+| Vccaux    |       1.800 |     0.042 |       0.029 |      0.013 |
+| Vcco33    |       3.300 |     0.224 |       0.223 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -137,9 +137,9 @@ Table of Contents
 +------------------------+-----------+
 | Name                   | Power (W) |
 +------------------------+-----------+
-| vga_test               |     2.011 |
-|   vga_sync_u1          |     0.413 |
-|     counter_mod_p_tick |     0.067 |
+| vga_test               |     0.954 |
+|   vga_sync_u1          |     0.108 |
+|     counter_mod_p_tick |     0.077 |
 +------------------------+-----------+
 
 
