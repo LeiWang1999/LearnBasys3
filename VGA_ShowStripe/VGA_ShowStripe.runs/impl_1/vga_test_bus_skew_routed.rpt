@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Fri Feb 22 15:42:57 2019
+| Date         : Sat Feb 23 11:57:20 2019
 | Host         : princeling-HP-Compaq-Pro-6380-MT running 64-bit Ubuntu 16.04.5 LTS
 | Command      : report_bus_skew -warn_on_violation -file vga_test_bus_skew_routed.rpt -pb vga_test_bus_skew_routed.pb -rpx vga_test_bus_skew_routed.rpx
 | Design       : vga_test

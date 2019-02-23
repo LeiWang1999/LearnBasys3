@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1550821252">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1550894159">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="vga_test.drc"/>
   <File Type="BG-BGN" Name="vga_test.bgn"/>
@@ -15,7 +15,6 @@
   <File Type="BG-BIT" Name="vga_test.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="vga_test_bus_skew_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="vga_test_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="vga_test_bus_skew_postroute_physopted.rpt"/>
   <File Type="RDI-RDI" Name="vga_test.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="vga_test_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="vga_test_timing_summary_postroute_physopted.pb"/>
@@ -69,6 +68,8 @@
   <File Type="REPORTS-TCL" Name="vga_test_reports.tcl"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="vga_test_bus_skew_routed.pb"/>
   <File Type="PA-TCL" Name="vga_test.tcl"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="vga_test_bus_skew_postroute_physopted.rpt"/>
+  <File Type="PA-DCP" Name="vga_test.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../../PrincelingModuleHub/counter_mod_m/counter_mod_m.v">
@@ -112,9 +113,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

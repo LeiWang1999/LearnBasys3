@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Feb 22 15:40:54 2019
-# Process ID: 5119
+# Start of session at: Sat Feb 23 11:47:15 2019
+# Process ID: 23885
 # Current directory: /home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.runs/synth_1
 # Command line: vivado -log vga_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_test.tcl
 # Log file: /home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.runs/synth_1/vga_test.vds
@@ -15,30 +15,29 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5154 
+INFO: Helper process launched with PID 23988 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1308.805 ; gain = 86.879 ; free physical = 1158 ; free virtual = 10433
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1308.809 ; gain = 86.879 ; free physical = 1275 ; free virtual = 10553
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'vga_test' [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/sources_1/new/vga_test.v:23]
-INFO: [Synth 8-6157] synthesizing module 'vga_sync' [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/sources_1/new/vga_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/sources_1/new/vga_sync.v:25]
 	Parameter HD bound to: 640 - type: integer 
-	Parameter HF bound to: 48 - type: integer 
 	Parameter HB bound to: 16 - type: integer 
 	Parameter HR bound to: 96 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
 	Parameter VD bound to: 480 - type: integer 
-	Parameter VF bound to: 10 - type: integer 
 	Parameter VB bound to: 33 - type: integer 
 	Parameter VR bound to: 2 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'counter_mod_m' [/home/princeling/Documents/EELab/Fpga-verilog/PrincelingModuleHub/counter_mod_m/counter_mod_m.v:23]
 	Parameter N bound to: 2 - type: integer 
 	Parameter M bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'counter_mod_m' (1#1) [/home/princeling/Documents/EELab/Fpga-verilog/PrincelingModuleHub/counter_mod_m/counter_mod_m.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (2#1) [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/sources_1/new/vga_sync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (2#1) [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/sources_1/new/vga_sync.v:25]
 WARNING: [Synth 8-350] instance 'vga_sync_u1' of module 'vga_sync' requires 8 connections, but only 5 given [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/sources_1/new/vga_test.v:36]
 INFO: [Synth 8-6155] done synthesizing module 'vga_test' (3#1) [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/sources_1/new/vga_test.v:23]
-WARNING: [Synth 8-3331] design vga_test has unconnected port test[2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1353.430 ; gain = 131.504 ; free physical = 1171 ; free virtual = 10447
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1353.434 ; gain = 131.504 ; free physical = 1288 ; free virtual = 10566
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -51,10 +50,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1353.430 ; gain = 131.504 ; free physical = 1170 ; free virtual = 10446
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1353.434 ; gain = 131.504 ; free physical = 1287 ; free virtual = 10565
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1353.430 ; gain = 131.504 ; free physical = 1170 ; free virtual = 10446
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1353.434 ; gain = 131.504 ; free physical = 1287 ; free virtual = 10565
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -62,6 +61,24 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'test[2]'. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'test[1]'. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'test[0]'. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'test[2]'. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'test[1]'. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'test[0]'. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_test_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/vga_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -70,26 +87,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1653.758 ; gain = 0.000 ; free physical = 927 ; free virtual = 10203
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1653.762 ; gain = 0.000 ; free physical = 1046 ; free virtual = 10324
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1653.758 ; gain = 431.832 ; free physical = 994 ; free virtual = 10270
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1653.762 ; gain = 431.832 ; free physical = 1113 ; free virtual = 10391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1653.758 ; gain = 431.832 ; free physical = 994 ; free virtual = 10270
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1653.762 ; gain = 431.832 ; free physical = 1113 ; free virtual = 10391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1653.758 ; gain = 431.832 ; free physical = 995 ; free virtual = 10272
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1653.762 ; gain = 431.832 ; free physical = 1115 ; free virtual = 10393
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "m_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1653.758 ; gain = 431.832 ; free physical = 987 ; free virtual = 10263
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1653.762 ; gain = 431.832 ; free physical = 1106 ; free virtual = 10384
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -159,9 +176,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design vga_test has unconnected port test[2]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1653.758 ; gain = 431.832 ; free physical = 975 ; free virtual = 10253
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1653.762 ; gain = 431.832 ; free physical = 1095 ; free virtual = 10375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -173,13 +189,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 1653.758 ; gain = 431.832 ; free physical = 850 ; free virtual = 10128
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1653.762 ; gain = 431.832 ; free physical = 970 ; free virtual = 10250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1653.758 ; gain = 431.832 ; free physical = 850 ; free virtual = 10128
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1653.762 ; gain = 431.832 ; free physical = 970 ; free virtual = 10250
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -191,7 +207,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.773 ; gain = 433.848 ; free physical = 850 ; free virtual = 10128
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.777 ; gain = 433.848 ; free physical = 970 ; free virtual = 10250
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -215,7 +231,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.773 ; gain = 433.848 ; free physical = 850 ; free virtual = 10128
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.777 ; gain = 433.848 ; free physical = 970 ; free virtual = 10250
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -228,7 +244,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.773 ; gain = 433.848 ; free physical = 850 ; free virtual = 10128
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.777 ; gain = 433.848 ; free physical = 970 ; free virtual = 10250
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -240,25 +256,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.773 ; gain = 433.848 ; free physical = 850 ; free virtual = 10128
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.777 ; gain = 433.848 ; free physical = 970 ; free virtual = 10250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.773 ; gain = 433.848 ; free physical = 850 ; free virtual = 10128
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.777 ; gain = 433.848 ; free physical = 970 ; free virtual = 10250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.773 ; gain = 433.848 ; free physical = 850 ; free virtual = 10128
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.777 ; gain = 433.848 ; free physical = 970 ; free virtual = 10250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.773 ; gain = 433.848 ; free physical = 850 ; free virtual = 10128
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.777 ; gain = 433.848 ; free physical = 970 ; free virtual = 10250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -271,37 +287,36 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+------+------+
-|      |Cell  |Count |
-+------+------+------+
-|1     |BUFG  |     1|
-|2     |LUT1  |     2|
-|3     |LUT2  |     2|
-|4     |LUT3  |     6|
-|5     |LUT4  |     6|
-|6     |LUT5  |     8|
-|7     |LUT6  |    12|
-|8     |FDCE  |    25|
-|9     |FDRE  |     2|
-|10    |IBUF  |     5|
-|11    |OBUF  |     7|
-|12    |OBUFT |     1|
-+------+------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     2|
+|4     |LUT3 |     6|
+|5     |LUT4 |     6|
+|6     |LUT5 |     8|
+|7     |LUT6 |    12|
+|8     |FDCE |    25|
+|9     |FDRE |     2|
+|10    |IBUF |     5|
+|11    |OBUF |     5|
++------+-----+------+
 
 Report Instance Areas: 
 +------+-----------------------+--------------+------+
 |      |Instance               |Module        |Cells |
 +------+-----------------------+--------------+------+
-|1     |top                    |              |    77|
+|1     |top                    |              |    74|
 |2     |  vga_sync_u1          |vga_sync      |    60|
 |3     |    counter_mod_p_tick |counter_mod_m |     6|
 +------+-----------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.773 ; gain = 433.848 ; free physical = 850 ; free virtual = 10128
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.777 ; gain = 433.848 ; free physical = 970 ; free virtual = 10250
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1655.773 ; gain = 133.520 ; free physical = 905 ; free virtual = 10183
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1655.781 ; gain = 433.848 ; free physical = 905 ; free virtual = 10183
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1655.777 ; gain = 133.520 ; free physical = 1024 ; free virtual = 10304
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1655.785 ; gain = 433.848 ; free physical = 1024 ; free virtual = 10304
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -311,11 +326,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-19 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+19 Infos, 7 Warnings, 6 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1660.773 ; gain = 451.422 ; free physical = 904 ; free virtual = 10182
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1660.777 ; gain = 451.422 ; free physical = 1022 ; free virtual = 10302
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_ShowStripe/VGA_ShowStripe.runs/synth_1/vga_test.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file vga_test_utilization_synth.rpt -pb vga_test_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1684.785 ; gain = 0.000 ; free physical = 904 ; free virtual = 10182
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 22 15:41:37 2019...
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1684.789 ; gain = 0.000 ; free physical = 1024 ; free virtual = 10304
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 23 11:47:59 2019...

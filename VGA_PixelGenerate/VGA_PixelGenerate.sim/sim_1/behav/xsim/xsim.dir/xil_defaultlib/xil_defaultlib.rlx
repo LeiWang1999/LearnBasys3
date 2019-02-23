@@ -1,0 +1,13 @@
+0.6
+2018.2
+Jun 14 2018
+20:07:38
+/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/VGA/counter_mod_m.v,1548147780,verilog,,/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/rgb_mux.v,,counter_mod_m,,,,,,,,
+/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/VGA/vga_sync.v,1550832546,verilog,,/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/wall.v,,vga_sync,,,,,,,,
+/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/ball.v,1550900160,verilog,,/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/VGA/counter_mod_m.v,,ball,,,,,,,,
+/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/rgb_mux.v,1550901455,verilog,,/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/stick.v,,rgb_mux,,,,,,,,
+/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/stick.v,1550900171,verilog,,/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/top.v,,stick,,,,,,,,
+/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/tb_top.v,1550900361,verilog,,,,tb_top,,,,,,,,
+/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/top.v,1550901481,verilog,,/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/VGA/vga_sync.v,,top,,,,,,,,
+/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/wall.v,1550890274,verilog,,/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/tb_top.v,,wall,,,,,,,,

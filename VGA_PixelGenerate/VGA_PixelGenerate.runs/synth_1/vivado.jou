@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Feb 23 14:23:57 2019
+# Process ID: 15859
+# Current directory: /home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.runs/synth_1/top.vds
+# Journal file: /home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace

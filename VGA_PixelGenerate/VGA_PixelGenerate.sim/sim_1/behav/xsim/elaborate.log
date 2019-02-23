@@ -1,0 +1,20 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 355fdf1405d5485e95575a3ec2309835 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port rgb [/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/VGA_PixelGenerate/VGA_PixelGenerate.srcs/sources_1/new/top.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter_mod_m(N=2,M=4)
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.wall
+Compiling module xil_defaultlib.stick_default
+Compiling module xil_defaultlib.ball_default
+Compiling module xil_defaultlib.rgb_mux
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

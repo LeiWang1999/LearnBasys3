@@ -24,8 +24,8 @@ module vga_test(
         input wire clk,rst_n,
         input wire [2:0] sw,
         output wire hsync,vsync,
-        output wire [2:0] rgb,
-        output wire [2:0] test // test信号作为仿真测试
+        output wire [2:0] rgb
+    //    output wire [2:0] test // test信号作为仿真测试
     );
 
     // 信号声明
@@ -51,6 +51,6 @@ module vga_test(
     end
 
     assign rgb = (video_on)?rgb_reg:3'b0;
-    assign test[0] = hsync;
-    assign test[1] = vsync;
+//    assign test[0] = hsync;
+//    assign test[1] = vsync;
 endmodule
