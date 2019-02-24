@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/princeling/Documents/ElectronicDesign/Fpga-verilog/LearnBasys3/FIFO/FIFO.runs/fifo_generator_0_synth_1'
+HD_PWD='/home/princeling/Documents/EELab/Fpga-verilog/LearnBasys3/FIFO/FIFO.runs/fifo_generator_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
